@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "rootDir": "src", //specifies the root directory of the TypeScript source files. Must be explicitly set if the "outDir" option is set, to prevent the compiler from including unintended files in the compilation process.
+        "outDir": "build", //specifies the output directory for the compiled JavaScript files
+        //"target": "es6", //set the compiler to target a specific version of JavaScript
+        "target": "esnext", //set the compiler to target the latest version of JavaScript
+        "noEmit": true, //prevents the compiler from emitting any output files. This is useful when you want to perform type checking (npx tsc) without generating JavaScript files.
+        "module": "commonjs",
+        "strict": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "include": [
+        "src/**/*"
+    ]
+}
